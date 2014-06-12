@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.autotetsting.framework.smoke.SmokeTests">
+      <class name="com.autotesting.framework.smoke.SmokeTests">
         <methods>
           <include name="getSalaryValidData"/>
           <include name="validatePersonValidData"/>
-          <include name="getPersonTestValidNumber"/>
           <include name="getPersonNumberValidData"/>
+          <include name="getPersonTestValidNumber"/>
           <include name="finishTests"/>
         </methods>
-      </class> <!-- com.autotetsting.framework.smoke.SmokeTests -->
+      </class> <!-- com.autotesting.framework.smoke.SmokeTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
