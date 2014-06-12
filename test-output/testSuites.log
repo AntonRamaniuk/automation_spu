@@ -2454,3 +2454,118 @@ INFO  [2014-06-11 17:15:04.025 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonService
     }
   ]
 }
+INFO  [2014-06-12 15:01:52.251 GMT+02:00]  [main      ]  c.a.f.u.PropertiesReader - PROPERTIES FILE IS OPENED AND READ:{getSalary.sendPath=src/main/resources/test_data/get_salary/, loginDBT1=SPUADM, getPerson.sendNumberPath=test_data/get_person, getPerson.expectedPath=expected_results/get_person_service, timeOutForSleep=1, primaryFilesDB.sendPath=src/main/resources/test_data/primary_files_data_base/, screenshot.path=screenshots/services, smokeTests.validatePerson.sendData=src/main/resources/test_data/valdiate_person, application.url=http://192.168.5.77:9080/spu-interfaces/swagger-ui/, getSalary.expectedPath=expected_results/get_salary_service, getNumber.sendPath=src/main/resources/test_data/get_person_number/, smokeTests.expectedPath=expected_results/smoke_test, getNumber.expectedPath=expected_results/get_number_service, passwordDBD1=SPUADM, validatePerson.sendPath=src/main/resources/test_data/validate_person/, primaryFilesDB.expectedPath=expected_results/primary_files_data_base, loginDBD1=SPUADM, dataBaseDBT1url=10.0.12.107:1446/DBT1:retrieveMessagesFromServerOnGetMessage=true&characterEncoding=UTF-8;, timeOut=10, dataBase=DBT1, dataBaseDBD1url=10.0.12.107:2446/DBD1:retrieveMessagesFromServerOnGetMessage=true&characterEncoding=UTF-8;, browser=CHROME, passwordDBT1=SPUADM, validatePerson.expectedPath=expected_results/validate_person_service, services.url=http://192.168.5.77:9080/spu-interfaces/api}
+INFO  [2014-06-12 15:01:52.253 GMT+02:00]  [main      ]  c.a.f.u.PropertiesReader - [ACTION]: Test data for validate person service read from file validate_person_smoke_test.txtwith data: {"name": {"lastName": "ЗУБРОВА","firstName": "ИРИНА","middleName": "НИКОЛАЕВНА"},"number": "001-001-041 20","genderCode": "Ж","birthDate": {"day": 13,"month": 9,"year": 1971}}
+INFO  [2014-06-12 15:01:52.254 GMT+02:00]  [main      ]  c.a.f.u.RestConnect - [REST]: Content for request is obtained: {"name": {"lastName": "ЗУБРОВА","firstName": "ИРИНА","middleName": "НИКОЛАЕВНА"},"number": "001-001-041 20","genderCode": "Ж","birthDate": {"day": 13,"month": 9,"year": 1971}}
+INFO  [2014-06-12 15:01:52.258 GMT+02:00]  [main      ]  c.a.f.u.RestConnect - [REST]: request to rest-skmv is sent witn contet: {"name": {"lastName": "ЗУБРОВА","firstName": "ИРИНА","middleName": "НИКОЛАЕВНА"},"number": "001-001-041 20","genderCode": "Ж","birthDate": {"day": 13,"month": 9,"year": 1971}}
+ERROR [2014-06-12 15:02:04.143 GMT+02:00]  [main      ]  c.a.f.u.RestConnect - [REST]: ERROR: org.apache.http.conn.HttpHostConnectException: Connection to http://192.168.5.77:9080 refused
+INFO  [2014-06-12 15:02:04.144 GMT+02:00]  [main      ]  c.a.f.u.RestConnect - [REST]: Connection to rest is closed
+INFO  [2014-06-12 18:11:16.236 GMT+02:00]  [main      ]  c.a.f.u.PropertiesReader - PROPERTIES FILE IS OPENED AND READ:{getSalary.sendPath=src/main/resources/test_data/get_salary/, loginDBT1=SPUADM, getPerson.sendNumberPath=test_data/get_person, getPerson.expectedPath=expected_results/get_person_service, timeOutForSleep=1, primaryFilesDB.sendPath=src/main/resources/test_data/primary_files_data_base/, screenshot.path=screenshots/services, smokeTests.validatePerson.sendData=src/main/resources/test_data/valdiate_person, application.url=http://192.168.5.77:9080/spu-interfaces/swagger-ui/, getSalary.expectedPath=expected_results/get_salary_service, getNumber.sendPath=src/main/resources/test_data/get_person_number/, smokeTests.expectedPath=expected_results/smoke_test, getNumber.expectedPath=expected_results/get_number_service, passwordDBD1=SPUADM, validatePerson.sendPath=src/main/resources/test_data/validate_person/, primaryFilesDB.expectedPath=expected_results/primary_files_data_base, loginDBD1=SPUADM, dataBaseDBT1url=10.0.12.107:1446/DBT1:retrieveMessagesFromServerOnGetMessage=true&characterEncoding=UTF-8;, timeOut=10, dataBase=DBT1, dataBaseDBD1url=10.0.12.107:2446/DBD1:retrieveMessagesFromServerOnGetMessage=true&characterEncoding=UTF-8;, browser=CHROME, passwordDBT1=SPUADM, validatePerson.expectedPath=expected_results/validate_person_service, services.url=http://192.168.5.77:9080/spu-interfaces/api}
+INFO  [2014-06-12 18:11:16.239 GMT+02:00]  [main      ]  c.a.f.u.PropertiesReader - FILE WITH TEST DATA FOR GET PERSON SERVICE IS OPENED AND READ:{getPerson.smokeTest={"number":"001-001-041 20"}, getPerson.firstTest={"number":"001-004-120"}, getPerson.secondTest={"number":"001001041"}}
+ERROR [2014-06-12 18:11:17.576 GMT+02:00]  [main      ]  c.a.f.u.WebDriverRunner - Ошибка создания сущности драйвера
+org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 x86_64) (WARNING: The server did not provide any stacktrace information); duration or timeout: 93 milliseconds
+Build info: version: '2.9.0', revision: '14289', time: '2011-10-20 23:22:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'
+Driver info: driver.version: ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [na:1.7.0_60]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [na:1.7.0_60]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [na:1.7.0_60]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [na:1.7.0_60]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:147) ~[selenium-remote-driver-2.9.0.jar:na]
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:113) ~[selenium-remote-driver-2.9.0.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:417) ~[selenium-remote-driver-2.9.0.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:115) ~[selenium-remote-driver-2.9.0.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:76) ~[selenium-remote-driver-2.9.0.jar:na]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120) ~[selenium-chrome-driver-2.9.0.jar:na]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:98) ~[selenium-chrome-driver-2.9.0.jar:na]
+	at com.autotesting.framework.utils.WebDriverRunner.<init>(WebDriverRunner.java:38) [classes/:na]
+	at com.autotesting.framework.utils.WebDriverRunner.getWDR(WebDriverRunner.java:27) [classes/:na]
+	at com.autotesting.framework.utils.WebDriverBaseActions.<init>(WebDriverBaseActions.java:17) [classes/:na]
+	at com.autotesting.framework.screens.GetPersonServicePage.<init>(GetPersonServicePage.java:28) [classes/:na]
+	at com.autotesting.framework.smoke.SmokeTests.<init>(SmokeTests.java:29) [classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [na:1.7.0_60]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [na:1.7.0_60]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [na:1.7.0_60]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [na:1.7.0_60]
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:29) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.internal.ClassHelper.createInstance1(ClassHelper.java:387) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.internal.ClassHelper.createInstance(ClassHelper.java:299) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:110) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:186) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.internal.TestNGClassFinder.<init>(TestNGClassFinder.java:120) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.TestRunner.initMethods(TestRunner.java:409) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.TestRunner.init(TestRunner.java:235) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.TestRunner.init(TestRunner.java:205) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.TestRunner.<init>(TestRunner.java:160) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.remote.RemoteTestNG$1.newTestRunner(RemoteTestNG.java:141) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.remote.RemoteTestNG$DelegatingTestRunnerFactory.newTestRunner(RemoteTestNG.java:271) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.SuiteRunner$ProxyTestRunnerFactory.newTestRunner(SuiteRunner.java:561) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.SuiteRunner.init(SuiteRunner.java:157) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:111) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1299) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1286) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.TestNG.run(TestNG.java:1057) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204) [testng.jar:6.8.7beta-201309140723]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175) [testng.jar:6.8.7beta-201309140723]
+INFO  [2014-06-12 18:11:17.630 GMT+02:00]  [main      ]  c.a.f.s.BaseScreen - [DRIVER]: Browser is opened
+INFO  [2014-06-12 18:21:00.742 GMT+02:00]  [main      ]  c.a.f.u.PropertiesReader - PROPERTIES FILE IS OPENED AND READ:{getSalary.sendPath=src/main/resources/test_data/get_salary/, loginDBT1=SPUADM, getPerson.sendNumberPath=test_data/get_person, getPerson.expectedPath=expected_results/get_person_service, timeOutForSleep=1, primaryFilesDB.sendPath=src/main/resources/test_data/primary_files_data_base/, screenshot.path=screenshots/services, smokeTests.validatePerson.sendData=src/main/resources/test_data/valdiate_person, application.url=http://192.168.5.77:9080/spu-interfaces/swagger-ui/, getSalary.expectedPath=expected_results/get_salary_service, getNumber.sendPath=src/main/resources/test_data/get_person_number/, smokeTests.expectedPath=expected_results/smoke_test, getNumber.expectedPath=expected_results/get_number_service, passwordDBD1=SPUADM, validatePerson.sendPath=src/main/resources/test_data/validate_person/, primaryFilesDB.expectedPath=expected_results/primary_files_data_base, loginDBD1=SPUADM, dataBaseDBT1url=10.0.12.107:1446/DBT1:retrieveMessagesFromServerOnGetMessage=true&characterEncoding=UTF-8;, timeOut=10, dataBase=DBT1, dataBaseDBD1url=10.0.12.107:2446/DBD1:retrieveMessagesFromServerOnGetMessage=true&characterEncoding=UTF-8;, browser=CHROME, passwordDBT1=SPUADM, validatePerson.expectedPath=expected_results/validate_person_service, services.url=http://192.168.5.77:9080/spu-interfaces/api}
+INFO  [2014-06-12 18:21:00.744 GMT+02:00]  [main      ]  c.a.f.u.PropertiesReader - FILE WITH TEST DATA FOR GET PERSON SERVICE IS OPENED AND READ:{getPerson.smokeTest={"number":"001-001-041 20"}, getPerson.firstTest={"number":"001-004-120"}, getPerson.secondTest={"number":"001001041"}}
+ERROR [2014-06-12 18:21:02.234 GMT+02:00]  [main      ]  c.a.f.u.WebDriverRunner - [DRIVER]: ERROR APEARED
+org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+  (Driver info: chromedriver=2.9.248315,platform=Windows NT 6.1 x86_64) (WARNING: The server did not provide any stacktrace information); duration or timeout: 95 milliseconds
+Build info: version: '2.9.0', revision: '14289', time: '2011-10-20 23:22:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'
+Driver info: driver.version: ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [na:1.7.0_60]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) [na:1.7.0_60]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [na:1.7.0_60]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) [na:1.7.0_60]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:147) ~[selenium-remote-driver-2.9.0.jar:na]
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:113) ~[selenium-remote-driver-2.9.0.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:417) ~[selenium-remote-driver-2.9.0.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:115) ~[selenium-remote-driver-2.9.0.jar:na]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:76) ~[selenium-remote-driver-2.9.0.jar:na]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120) ~[selenium-chrome-driver-2.9.0.jar:na]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:98) ~[selenium-chrome-driver-2.9.0.jar:na]
+	at com.autotesting.framework.utils.WebDriverRunner.<init>(WebDriverRunner.java:38) [classes/:na]
+	at com.autotesting.framework.utils.WebDriverRunner.getWDR(WebDriverRunner.java:27) [classes/:na]
+	at com.autotesting.framework.utils.WebDriverBaseActions.<init>(WebDriverBaseActions.java:17) [classes/:na]
+	at com.autotesting.framework.screens.GetPersonServicePage.<init>(GetPersonServicePage.java:28) [classes/:na]
+	at com.autotesting.framework.smoke.SmokeTests.<init>(SmokeTests.java:29) [classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [na:1.7.0_60]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) [na:1.7.0_60]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [na:1.7.0_60]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) [na:1.7.0_60]
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:29) [testng-6.8.8.jar:na]
+	at org.testng.internal.ClassHelper.createInstance1(ClassHelper.java:387) [testng-6.8.8.jar:na]
+	at org.testng.internal.ClassHelper.createInstance(ClassHelper.java:299) [testng-6.8.8.jar:na]
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:115) [testng-6.8.8.jar:na]
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:200) [testng-6.8.8.jar:na]
+	at org.testng.internal.TestNGClassFinder.<init>(TestNGClassFinder.java:120) [testng-6.8.8.jar:na]
+	at org.testng.TestRunner.initMethods(TestRunner.java:409) [testng-6.8.8.jar:na]
+	at org.testng.TestRunner.init(TestRunner.java:235) [testng-6.8.8.jar:na]
+	at org.testng.TestRunner.init(TestRunner.java:205) [testng-6.8.8.jar:na]
+	at org.testng.TestRunner.<init>(TestRunner.java:153) [testng-6.8.8.jar:na]
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:536) [testng-6.8.8.jar:na]
+	at org.testng.SuiteRunner.init(SuiteRunner.java:159) [testng-6.8.8.jar:na]
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:113) [testng-6.8.8.jar:na]
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1299) [testng-6.8.8.jar:na]
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1286) [testng-6.8.8.jar:na]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140) [testng-6.8.8.jar:na]
+	at org.testng.TestNG.run(TestNG.java:1057) [testng-6.8.8.jar:na]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217) [surefire-testng-2.16.jar:2.16]
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84) [surefire-testng-2.16.jar:2.16]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92) [surefire-testng-2.16.jar:2.16]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200) [surefire-booter-2.16.jar:2.16]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153) [surefire-booter-2.16.jar:2.16]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.16.jar:2.16]
+INFO  [2014-06-12 18:21:02.284 GMT+02:00]  [pool-1-thread-1]  c.a.f.s.BaseScreen - [DRIVER]: Browser is opened
+INFO  [2014-06-12 18:25:27.126 GMT+02:00]  [main      ]  c.a.f.u.PropertiesReader - PROPERTIES FILE IS OPENED AND READ:{getSalary.sendPath=src/main/resources/test_data/get_salary/, loginDBT1=SPUADM, getPerson.sendNumberPath=test_data/get_person, getPerson.expectedPath=expected_results/get_person_service, timeOutForSleep=1, primaryFilesDB.sendPath=src/main/resources/test_data/primary_files_data_base/, screenshot.path=screenshots/services, smokeTests.validatePerson.sendData=src/main/resources/test_data/valdiate_person, application.url=http://192.168.5.77:9080/spu-interfaces/swagger-ui/, getSalary.expectedPath=expected_results/get_salary_service, getNumber.sendPath=src/main/resources/test_data/get_person_number/, smokeTests.expectedPath=expected_results/smoke_test, getNumber.expectedPath=expected_results/get_number_service, passwordDBD1=SPUADM, validatePerson.sendPath=src/main/resources/test_data/validate_person/, primaryFilesDB.expectedPath=expected_results/primary_files_data_base, loginDBD1=SPUADM, dataBaseDBT1url=10.0.12.107:1446/DBT1:retrieveMessagesFromServerOnGetMessage=true&characterEncoding=UTF-8;, timeOut=10, dataBase=DBT1, dataBaseDBD1url=10.0.12.107:2446/DBD1:retrieveMessagesFromServerOnGetMessage=true&characterEncoding=UTF-8;, browser=CHROME, passwordDBT1=SPUADM, validatePerson.expectedPath=expected_results/validate_person_service, services.url=http://192.168.5.77:9080/spu-interfaces/api}
+INFO  [2014-06-12 18:25:27.126 GMT+02:00]  [main      ]  c.a.f.u.PropertiesReader - [ACTION]: Test data for validate person service read from file validate_person_smoke_test.txtwith data: {"name": {"lastName": "ЗУБРОВА","firstName": "ИРИНА","middleName": "НИКОЛАЕВНА"},"number": "001-001-041 20","genderCode": "Ж","birthDate": {"day": 13,"month": 9,"year": 1971}}
+INFO  [2014-06-12 18:25:27.126 GMT+02:00]  [main      ]  c.a.f.u.RestConnect - [REST]: Content for request is obtained: {"name": {"lastName": "ЗУБРОВА","firstName": "ИРИНА","middleName": "НИКОЛАЕВНА"},"number": "001-001-041 20","genderCode": "Ж","birthDate": {"day": 13,"month": 9,"year": 1971}}
+INFO  [2014-06-12 18:25:27.126 GMT+02:00]  [main      ]  c.a.f.u.RestConnect - [REST]: request to rest-skmv is sent witn contet: {"name": {"lastName": "ЗУБРОВА","firstName": "ИРИНА","middleName": "НИКОЛАЕВНА"},"number": "001-001-041 20","genderCode": "Ж","birthDate": {"day": 13,"month": 9,"year": 1971}}
+ERROR [2014-06-12 18:25:39.246 GMT+02:00]  [main      ]  c.a.f.u.RestConnect - [REST]: ERROR: org.apache.http.conn.HttpHostConnectException: Connection to http://192.168.5.77:9080 refused
+INFO  [2014-06-12 18:25:39.246 GMT+02:00]  [main      ]  c.a.f.u.RestConnect - [REST]: Connection to rest is closed

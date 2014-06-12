@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="classes">
   <test name="Smoke">
     <packages>
-      <package name="com.autotesting.framework.smoke"/>
+      <package name="com.autotestting.framework.smoke"/>
     </packages>
 </test>
   <!--     <test name="sawgger">

@@ -37,9 +37,9 @@ public class WebDriverRunner {
 			service.start();
 			driver = new ChromeDriver(service);
 			systemWait();
-			log.debug("Dirver is created");
+			log.debug("[DRIVER]: Dirver is created");
 		} catch (Exception e) {
-			log.error("Ошибка создания сущности драйвера", e);
+			log.error("[DRIVER]: ERROR APEARED WHILE CREATING DRIVER", e);
 		}
 	}
 
