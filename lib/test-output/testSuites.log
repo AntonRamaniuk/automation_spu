@@ -1,0 +1,94 @@
+INFO  [2014-06-03 12:08:55.054 FET]  [main      ]  c.a.f.u.PropertiesReader - PROPERTIES FILE IS OPENED AND READ:{getPerson.sendNumberPath=test_data/get_person, services.url=http://192.168.5.77:9080/spu-interfaces/api, browser=FIREFOX, application.url=http://192.168.5.77:9080/spu-interfaces/swagger-ui/, getPerson.expectedPath=expected_results/get_person_service, screenshot.path=screenshots/services/getPerson, time_out=10}
+INFO  [2014-06-03 12:08:55.116 FET]  [main      ]  c.a.f.u.PropertiesReader - FILE WITH TEST DATA FOR GET PERSON SERVICE IS OPENED AND READ:{getPerson.smokeTest={"number":"00100104120"}, getPerson.secondTest={"number":"001004120"}, getPerson.thirdTest={"number":"001001041"}}
+INFO  [2014-06-03 12:10:10.072 FET]  [main      ]  c.a.f.u.PropertiesReader - PROPERTIES FILE IS OPENED AND READ:{getPerson.sendNumberPath=test_data/get_person, services.url=http://192.168.5.77:9080/spu-interfaces/api, browser=FIREFOX, application.url=http://192.168.5.77:9080/spu-interfaces/swagger-ui/, getPerson.expectedPath=expected_results/get_person_service, screenshot.path=screenshots/services/getPerson, time_out=10}
+INFO  [2014-06-03 12:10:10.075 FET]  [main      ]  c.a.f.u.PropertiesReader - FILE WITH TEST DATA FOR GET PERSON SERVICE IS OPENED AND READ:{getPerson.smokeTest={"number":"00100104120"}, getPerson.secondTest={"number":"001004120"}, getPerson.thirdTest={"number":"001001041"}}
+INFO  [2014-06-03 12:10:56.931 FET]  [main      ]  c.a.f.u.PropertiesReader - PROPERTIES FILE IS OPENED AND READ:{getPerson.sendNumberPath=test_data/get_person, services.url=http://192.168.5.77:9080/spu-interfaces/api, browser=FIREFOX, application.url=http://192.168.5.77:9080/spu-interfaces/swagger-ui/, getPerson.expectedPath=expected_results/get_person_service, screenshot.path=screenshots/services/getPerson, time_out=10}
+INFO  [2014-06-03 12:10:56.934 FET]  [main      ]  c.a.f.u.PropertiesReader - FILE WITH TEST DATA FOR GET PERSON SERVICE IS OPENED AND READ:{getPerson.smokeTest={"number":"00100104120"}, getPerson.secondTest={"number":"001004120"}, getPerson.thirdTest={"number":"001001041"}}
+INFO  [2014-06-03 12:11:25.040 FET]  [main      ]  c.a.f.u.PropertiesReader - PROPERTIES FILE IS OPENED AND READ:{getPerson.sendNumberPath=test_data/get_person, services.url=http://192.168.5.77:9080/spu-interfaces/api, browser=FIREFOX, application.url=http://192.168.5.77:9080/spu-interfaces/swagger-ui/, getPerson.expectedPath=expected_results/get_person_service, screenshot.path=screenshots/services/getPerson, time_out=10}
+INFO  [2014-06-03 12:11:25.042 FET]  [main      ]  c.a.f.u.PropertiesReader - FILE WITH TEST DATA FOR GET PERSON SERVICE IS OPENED AND READ:{getPerson.smokeTest={"number":"00100104120"}, getPerson.secondTest={"number":"001004120"}, getPerson.thirdTest={"number":"001001041"}}
+INFO  [2014-06-03 12:11:27.344 FET]  [pool-1-thread-1]  c.a.f.s.BaseScreen - Browser is opened
+INFO  [2014-06-03 12:11:28.388 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Setting in field: 'SKMV_URL_FIELD'. By xpath: '//input[@id='input_baseUrl']'. Value: 'http://192.168.5.77:9080/spu-interfaces/api'
+INFO  [2014-06-03 12:11:28.634 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Seted in field: 'SKMV_URL_FIELD'. By xpath: '//input[@id='input_baseUrl']'. Value: 'http://192.168.5.77:9080/spu-interfaces/api'
+INFO  [2014-06-03 12:11:28.635 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:11:28.852 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Clicking on element: 'EXPLORE_BUTTON. By xpath: '//a[@id='explore']'
+INFO  [2014-06-03 12:11:28.934 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Clicked on element: 'EXPLORE_BUTTON.'by xpath: '//a[@id='explore']'
+INFO  [2014-06-03 12:11:28.935 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:11:29.061 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Clicking on element: 'EXPAND_OPERATIONS_BUTTON. By xpath: '//li[@id='resource_GetPerson']//a[contains(@onclick,'expandOperationsForResource')]'
+INFO  [2014-06-03 12:11:29.292 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Clicked on element: 'EXPAND_OPERATIONS_BUTTON.'by xpath: '//li[@id='resource_GetPerson']//a[contains(@onclick,'expandOperationsForResource')]'
+INFO  [2014-06-03 12:11:29.292 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:11:29.423 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Setting in field: 'REQUEST_BODY'. By xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//textarea[@class='body-textarea']'. Value: '{"number":"001004120"}'
+INFO  [2014-06-03 12:11:30.854 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Seted in field: 'REQUEST_BODY'. By xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//textarea[@class='body-textarea']'. Value: '{"number":"001004120"}'
+INFO  [2014-06-03 12:11:30.854 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:11:30.975 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Clicking on element: 'BUTTON_TRY_IT_OUT. By xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//input[@value='Try it out!']'
+INFO  [2014-06-03 12:11:31.113 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Clicked on element: 'BUTTON_TRY_IT_OUT.'by xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//input[@value='Try it out!']'
+INFO  [2014-06-03 12:11:31.114 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:11:31.931 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: CAPTURE SCREENSHOT OF RESPONSE BODY FOR TEST:getPersonTestInvalidNumber
+INFO  [2014-06-03 12:11:32.532 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:11:32.691 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: COLLECTED RESPONSE CODE
+INFO  [2014-06-03 12:11:32.708 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: COLLECTED RESPONSE CODE
+INFO  [2014-06-03 12:11:32.802 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: COLLECTED RESPONSE TEXT
+INFO  [2014-06-03 12:11:32.808 FET]  [pool-1-thread-1]  c.a.f.s.BaseScreen - Browser is opened
+INFO  [2014-06-03 12:11:32.986 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Setting in field: 'SKMV_URL_FIELD'. By xpath: '//input[@id='input_baseUrl']'. Value: 'http://192.168.5.77:9080/spu-interfaces/api'
+INFO  [2014-06-03 12:11:33.119 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Seted in field: 'SKMV_URL_FIELD'. By xpath: '//input[@id='input_baseUrl']'. Value: 'http://192.168.5.77:9080/spu-interfaces/api'
+INFO  [2014-06-03 12:11:33.119 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:11:33.242 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Clicking on element: 'EXPLORE_BUTTON. By xpath: '//a[@id='explore']'
+INFO  [2014-06-03 12:11:33.310 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Clicked on element: 'EXPLORE_BUTTON.'by xpath: '//a[@id='explore']'
+INFO  [2014-06-03 12:11:33.310 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:11:33.431 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Clicking on element: 'EXPAND_OPERATIONS_BUTTON. By xpath: '//li[@id='resource_GetPerson']//a[contains(@onclick,'expandOperationsForResource')]'
+INFO  [2014-06-03 12:11:33.556 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Clicked on element: 'EXPAND_OPERATIONS_BUTTON.'by xpath: '//li[@id='resource_GetPerson']//a[contains(@onclick,'expandOperationsForResource')]'
+INFO  [2014-06-03 12:11:33.557 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:11:33.676 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Setting in field: 'REQUEST_BODY'. By xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//textarea[@class='body-textarea']'. Value: '{"number":"001001041"}'
+INFO  [2014-06-03 12:11:34.167 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Seted in field: 'REQUEST_BODY'. By xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//textarea[@class='body-textarea']'. Value: '{"number":"001001041"}'
+INFO  [2014-06-03 12:11:34.168 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:11:34.287 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Clicking on element: 'BUTTON_TRY_IT_OUT. By xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//input[@value='Try it out!']'
+INFO  [2014-06-03 12:11:34.344 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Clicked on element: 'BUTTON_TRY_IT_OUT.'by xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//input[@value='Try it out!']'
+INFO  [2014-06-03 12:11:34.345 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:11:35.116 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: CAPTURE SCREENSHOT OF RESPONSE BODY FOR TEST:getPersonTestInvalidNumberNoKs
+INFO  [2014-06-03 12:11:35.716 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:11:35.860 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: COLLECTED RESPONSE CODE
+INFO  [2014-06-03 12:11:35.876 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: COLLECTED RESPONSE CODE
+INFO  [2014-06-03 12:11:35.908 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: COLLECTED RESPONSE TEXT
+INFO  [2014-06-03 12:12:29.586 FET]  [main      ]  c.a.f.u.PropertiesReader - PROPERTIES FILE IS OPENED AND READ:{getPerson.sendNumberPath=test_data/get_person, services.url=http://192.168.5.77:9080/spu-interfaces/api, browser=FIREFOX, application.url=http://192.168.5.77:9080/spu-interfaces/swagger-ui/, getPerson.expectedPath=expected_results/get_person_service, screenshot.path=screenshots/services/getPerson, time_out=10}
+INFO  [2014-06-03 12:12:29.590 FET]  [main      ]  c.a.f.u.PropertiesReader - FILE WITH TEST DATA FOR GET PERSON SERVICE IS OPENED AND READ:{getPerson.smokeTest={"number":"00100104120"}, getPerson.secondTest={"number":"001004120"}, getPerson.thirdTest={"number":"001001041"}}
+INFO  [2014-06-03 12:12:32.260 FET]  [pool-1-thread-1]  c.a.f.s.BaseScreen - Browser is opened
+INFO  [2014-06-03 12:12:33.127 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Setting in field: 'SKMV_URL_FIELD'. By xpath: '//input[@id='input_baseUrl']'. Value: 'http://192.168.5.77:9080/spu-interfaces/api'
+INFO  [2014-06-03 12:12:33.297 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Seted in field: 'SKMV_URL_FIELD'. By xpath: '//input[@id='input_baseUrl']'. Value: 'http://192.168.5.77:9080/spu-interfaces/api'
+INFO  [2014-06-03 12:12:33.298 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:12:33.504 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Clicking on element: 'EXPLORE_BUTTON. By xpath: '//a[@id='explore']'
+INFO  [2014-06-03 12:12:33.584 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Clicked on element: 'EXPLORE_BUTTON.'by xpath: '//a[@id='explore']'
+INFO  [2014-06-03 12:12:33.585 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:12:33.706 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Clicking on element: 'EXPAND_OPERATIONS_BUTTON. By xpath: '//li[@id='resource_GetPerson']//a[contains(@onclick,'expandOperationsForResource')]'
+INFO  [2014-06-03 12:12:33.827 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Clicked on element: 'EXPAND_OPERATIONS_BUTTON.'by xpath: '//li[@id='resource_GetPerson']//a[contains(@onclick,'expandOperationsForResource')]'
+INFO  [2014-06-03 12:12:33.828 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:12:33.954 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Setting in field: 'REQUEST_BODY'. By xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//textarea[@class='body-textarea']'. Value: '{"number":"001004120"}'
+INFO  [2014-06-03 12:12:34.335 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Seted in field: 'REQUEST_BODY'. By xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//textarea[@class='body-textarea']'. Value: '{"number":"001004120"}'
+INFO  [2014-06-03 12:12:34.335 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:12:34.455 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Clicking on element: 'BUTTON_TRY_IT_OUT. By xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//input[@value='Try it out!']'
+INFO  [2014-06-03 12:12:34.529 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumber[ACTION]: Clicked on element: 'BUTTON_TRY_IT_OUT.'by xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//input[@value='Try it out!']'
+INFO  [2014-06-03 12:12:34.529 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:12:35.312 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: CAPTURE SCREENSHOT OF RESPONSE BODY FOR TEST:getPersonTestInvalidNumber
+INFO  [2014-06-03 12:12:35.912 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:12:36.068 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: COLLECTED RESPONSE CODE
+INFO  [2014-06-03 12:12:36.086 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: COLLECTED RESPONSE CODE
+INFO  [2014-06-03 12:12:36.121 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: COLLECTED RESPONSE TEXT
+INFO  [2014-06-03 12:12:36.125 FET]  [pool-1-thread-1]  c.a.f.s.BaseScreen - Browser is opened
+INFO  [2014-06-03 12:12:36.270 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Setting in field: 'SKMV_URL_FIELD'. By xpath: '//input[@id='input_baseUrl']'. Value: 'http://192.168.5.77:9080/spu-interfaces/api'
+INFO  [2014-06-03 12:12:36.421 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Seted in field: 'SKMV_URL_FIELD'. By xpath: '//input[@id='input_baseUrl']'. Value: 'http://192.168.5.77:9080/spu-interfaces/api'
+INFO  [2014-06-03 12:12:36.422 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:12:36.536 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Clicking on element: 'EXPLORE_BUTTON. By xpath: '//a[@id='explore']'
+INFO  [2014-06-03 12:12:36.596 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Clicked on element: 'EXPLORE_BUTTON.'by xpath: '//a[@id='explore']'
+INFO  [2014-06-03 12:12:36.596 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:12:36.723 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Clicking on element: 'EXPAND_OPERATIONS_BUTTON. By xpath: '//li[@id='resource_GetPerson']//a[contains(@onclick,'expandOperationsForResource')]'
+INFO  [2014-06-03 12:12:36.827 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Clicked on element: 'EXPAND_OPERATIONS_BUTTON.'by xpath: '//li[@id='resource_GetPerson']//a[contains(@onclick,'expandOperationsForResource')]'
+INFO  [2014-06-03 12:12:36.828 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:12:36.951 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Setting in field: 'REQUEST_BODY'. By xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//textarea[@class='body-textarea']'. Value: '{"number":"001001041"}'
+INFO  [2014-06-03 12:12:37.334 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Seted in field: 'REQUEST_BODY'. By xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//textarea[@class='body-textarea']'. Value: '{"number":"001001041"}'
+INFO  [2014-06-03 12:12:37.334 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:12:37.453 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Clicking on element: 'BUTTON_TRY_IT_OUT. By xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//input[@value='Try it out!']'
+INFO  [2014-06-03 12:12:37.512 FET]  [pool-1-thread-1]  c.a.f.u.WebDriverBaseActions - [TEST]getPersonTestInvalidNumberNoKs[ACTION]: Clicked on element: 'BUTTON_TRY_IT_OUT.'by xpath: '//div[@id='GetPerson_getPersonDataByNumber_post_0_content']//input[@value='Try it out!']'
+INFO  [2014-06-03 12:12:37.512 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:12:38.303 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: CAPTURE SCREENSHOT OF RESPONSE BODY FOR TEST:getPersonTestInvalidNumberNoKs
+INFO  [2014-06-03 12:12:38.903 FET]  [pool-1-thread-1]  c.a.f.u.Photogropher - Getting a snapshoot
+INFO  [2014-06-03 12:12:39.064 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: COLLECTED RESPONSE CODE
+INFO  [2014-06-03 12:12:39.080 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: COLLECTED RESPONSE CODE
+INFO  [2014-06-03 12:12:39.112 FET]  [pool-1-thread-1]  c.a.f.s.GetPersonServicePage - [ACTION]: COLLECTED RESPONSE TEXT

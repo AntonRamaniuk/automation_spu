@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25291" started-at="2014-06-06T11:53:31Z" finished-at="2014-06-06T11:53:56Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25291" started-at="2014-06-06T11:53:31Z" finished-at="2014-06-06T11:53:56Z">
+      <class name="com.autotetsting.framework.smoke.SmokeTests">
+        <test-method status="PASS" signature="getPersonTestValidNumber()[pri:0, instance:com.autotetsting.framework.smoke.SmokeTests@1bc0e7b8]" name="getPersonTestValidNumber" duration-ms="9405" started-at="2014-06-06T14:53:31Z" finished-at="2014-06-06T14:53:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPersonTestValidNumber -->
+        <test-method status="PASS" signature="validatePersonValidData()[pri:0, instance:com.autotetsting.framework.smoke.SmokeTests@1bc0e7b8]" name="validatePersonValidData" duration-ms="5696" started-at="2014-06-06T14:53:40Z" depends-on-methods="com.autotetsting.framework.smoke.SmokeTests.getPersonTestValidNumber" finished-at="2014-06-06T14:53:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePersonValidData -->
+        <test-method status="PASS" signature="getPersonNumberValidData()[pri:0, instance:com.autotetsting.framework.smoke.SmokeTests@1bc0e7b8]" name="getPersonNumberValidData" duration-ms="4555" started-at="2014-06-06T14:53:46Z" depends-on-methods="com.autotetsting.framework.smoke.SmokeTests.getPersonTestValidNumber, com.autotetsting.framework.smoke.SmokeTests.validatePersonValidData" finished-at="2014-06-06T14:53:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPersonNumberValidData -->
+        <test-method status="PASS" signature="getSalaryValidData()[pri:0, instance:com.autotetsting.framework.smoke.SmokeTests@1bc0e7b8]" name="getSalaryValidData" duration-ms="5618" started-at="2014-06-06T14:53:51Z" depends-on-methods="com.autotetsting.framework.smoke.SmokeTests.getPersonTestValidNumber, com.autotetsting.framework.smoke.SmokeTests.validatePersonValidData, com.autotetsting.framework.smoke.SmokeTests.getPersonNumberValidData" finished-at="2014-06-06T14:53:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSalaryValidData -->
+        <test-method status="PASS" signature="finishTests()[pri:0, instance:com.autotetsting.framework.smoke.SmokeTests@1bc0e7b8]" name="finishTests" is-config="true" duration-ms="1342" started-at="2014-06-06T14:53:56Z" finished-at="2014-06-06T14:53:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishTests -->
+      </class> <!-- com.autotetsting.framework.smoke.SmokeTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

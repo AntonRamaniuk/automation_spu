@@ -1,0 +1,14 @@
+{
+  "name": {
+    "lastName": "ÇÓÁĞÎÂÀ",
+    "firstName": "ÈĞÈÍÀ",
+    "middleName": "ÍÈÊÎËÀÅÂÍÀ"
+  },
+  "number": "001-001-041 20",
+  "periods": [
+    {
+      "startYear": 2011,
+      "endYear": 2013
+    }
+  ]
+}

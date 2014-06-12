@@ -1,0 +1,13 @@
+{
+  "name": {
+    "lastName": "ÇÓÁĞÎÂÀ",
+    "firstName": "ÈĞÈÍÀ",
+    "middleName": "ÍÈÊÎËÀÅÂÍÀ"
+  },
+  "genderCode": "Æ",
+  "birthDate": {
+    "day": 13,
+    "month": 9,
+    "year": 1971
+  }
+}

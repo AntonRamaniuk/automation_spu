@@ -1,0 +1,25 @@
+{
+  "name": {
+    "lastName": "ЗУБРОВА",
+    "firstName": "ИРИНА",
+    "middleName": "НИКОЛАЕВНА"
+  },
+  "genderName": "ЖЕНСКИЙ",
+  "birthDate": {
+    "day": "13",
+    "month": "9",
+    "year": "1971",
+    "formatName": "Стандартная дата"
+  },
+  "address": {
+    "inlineAddress": "Беларусь, Минск, Мирошниченко"
+  },
+  "identityCard": {
+    "identityCardTypeName": "Паспорт гражданина СССР",
+    "series": "ВА",
+    "seriesRom": "",
+    "number": "111222333",
+    "issueDate": "13.10.1999",
+    "issuedBy": "ЦЕНТРАЛЬНЫМ РУВД г. Минск"
+  }
+}

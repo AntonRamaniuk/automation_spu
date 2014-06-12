@@ -1,0 +1,69 @@
+{
+  "salaryInfoDto": [
+    {
+      "year": "2011",
+      "detailedSalaryInfo": [
+        {
+          "month": "1",
+          "organizationName": "”œ–¿¬ÀﬂﬁŸ¿ﬂ  ŒÃœ¿Õ»ﬂ “–»Õ‘» Œ",
+          "inn": "7701155020",
+          "organizationNameShort": "“–»Õ‘» Œ ” ",
+          "sum": 200,
+          "insurancePaymentSum": 100
+        },
+        {
+          "month": "2",
+          "organizationName": "”œ–¿¬ÀﬂﬁŸ¿ﬂ  ŒÃœ¿Õ»ﬂ “–»Õ‘» Œ",
+          "inn": "7701155020",
+          "organizationNameShort": "“–»Õ‘» Œ ” ",
+          "sum": 300,
+          "insurancePaymentSum": 200
+        },
+        {
+          "month": "3",
+          "organizationName": "”œ–¿¬ÀﬂﬁŸ¿ﬂ  ŒÃœ¿Õ»ﬂ “–»Õ‘» Œ",
+          "inn": "7701155020",
+          "organizationNameShort": "“–»Õ‘» Œ ” ",
+          "sum": 200,
+          "insurancePaymentSum": 200
+        },
+        {
+          "month": "4",
+          "organizationName": "”œ–¿¬ÀﬂﬁŸ¿ﬂ  ŒÃœ¿Õ»ﬂ “–»Õ‘» Œ",
+          "inn": "7701155020",
+          "organizationNameShort": "“–»Õ‘» Œ ” ",
+          "sum": 300,
+          "insurancePaymentSum": 200
+        }
+      ]
+    },
+    {
+      "year": "2013",
+      "detailedSalaryInfo": [
+        {
+          "month": "1",
+          "organizationName": "”œ–¿¬ÀﬂﬁŸ¿ﬂ  ŒÃœ¿Õ»ﬂ “–»Õ‘» Œ",
+          "inn": "7701155020",
+          "organizationNameShort": "“–»Õ‘» Œ ” ",
+          "sum": 110
+        },
+        {
+          "month": "2",
+          "organizationName": "”œ–¿¬ÀﬂﬁŸ¿ﬂ  ŒÃœ¿Õ»ﬂ “–»Õ‘» Œ",
+          "inn": "7701155020",
+          "organizationNameShort": "“–»Õ‘» Œ ” ",
+          "sum": 400,
+          "insurancePaymentSum": 200
+        },
+        {
+          "month": "3",
+          "organizationName": "”œ–¿¬ÀﬂﬁŸ¿ﬂ  ŒÃœ¿Õ»ﬂ “–»Õ‘» Œ",
+          "inn": "7701155020",
+          "organizationNameShort": "“–»Õ‘» Œ ” ",
+          "sum": 200,
+          "insurancePaymentSum": 100
+        }
+      ]
+    }
+  ]
+}

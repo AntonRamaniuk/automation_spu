@@ -1,0 +1,53 @@
+<!-- Use 'log' prefix for all properties with logback's scope to avoid substitution during building -->
+<configuration scan="false">
+    <jmxConfigurator/>
+    <!-- Path where all log files are located -->
+    <property name="log.file.path" value="test-output"/>
+    <property name="log.file.name" value="epgu"/>
+    <property name="log.encoder.pattern.console"
+              value="%-5level [%date{yyyy-MM-dd HH:mm:ss.SSS z}]  [%-10thread]  %logger{15} - %msg%n"/>
+    <property name="log.encoder.pattern.file"
+              value="%-5level [%date{yyyy-MM-dd HH:mm:ss.SSS z}]  [%-10thread]  %logger{15} - %msg%n"/>
+    <property name="log.encoder.charset" value="UTF-8"/>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${log.encoder.pattern.console}</pattern>
+            <charset>${log.encoder.charset}</charset>
+        </encoder>
+    </appender>
+
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- The name of the active log file -->
+        <file>${log.file.path}/${log.file.name}.log</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- The name of the archived log file -->
+            <fileNamePattern>${log.file.path}/${log.file.name}-%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
+            <!-- Avoid creating more then maxHistory archived files -->
+            <maxHistory>100</maxHistory>
+
+            <!--
+                Note the "%i" conversion token in addition to "%d".
+                Each time the current log file reaches maxFileSize before the current time period ends,
+                it will be archived with an increasing index, starting at 0.
+             -->
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>${log.encoder.pattern.file}</pattern>
+            <charset>${log.encoder.charset}</charset>
+        </encoder>
+    </appender>
+
+    <logger name="com.rstyle" level="info"/>    
+    <logger name="main" level="info"/>
+        
+    <root level="info">
+        <appender-ref ref="file"/>
+        <appender-ref ref="console"/>
+    </root>
+</configuration>
