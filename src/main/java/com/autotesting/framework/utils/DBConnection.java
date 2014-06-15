@@ -1,7 +1,6 @@
 package com.autotesting.framework.utils;
 
 import java.sql.Connection;
-import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -75,13 +74,11 @@ public class DBConnection {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-	         System.out.println(countInserted + " records inserted.\n");
 	}
 
 	public ResultSet selectQuery(String query) {
 
-		try {
-			
+		try {	
 			Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
 			logger.info(String.format("[DATABASE]: Sending SQL request to database, query: %s",query));
 			ResultSet rs = stmt.executeQuery(query);
@@ -90,9 +87,7 @@ public class DBConnection {
 		} catch (SQLException e) {
 			logger.error("[DATABASE]: Exception at sql query", e);
 		}
-
 		return null;
-
 	}
 
 	public void close() throws Exception {

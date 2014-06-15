@@ -1,17 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="classes">
+
+<test name="PrimaryRest">
+    <classes>
+      <class name="LoadPrimaryFilesRest"/>
+    </classes>
+</test>
+
   <test name="Smoke">
     <packages>
       <package name="com.autotesting.framework.smoke"/>
     </packages>
 </test>
+
+<test name="Regression_ValidatePerson">
+    <classes>
+      <class name="ValidatePersonServiceTests"/>
+    </classes>
+</test>
+
+<test name="DropAllTables">
+    <classes>
+      <class name="DropTables"/>
+    </classes>
+</test>
+
   <!--     <test name="sawgger">
     <packages>
       <package name="com.autotesting.framework.regression.swagger"/>
     </packages>
   </test>       -->
 </suite>
+
 
 
 

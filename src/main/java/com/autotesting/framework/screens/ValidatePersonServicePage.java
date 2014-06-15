@@ -9,8 +9,6 @@ package com.autotesting.framework.screens;
  * 
  */
 
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.concurrent.TimeUnit;
 
@@ -29,8 +27,6 @@ public class ValidatePersonServicePage extends BaseScreen {
 	private final Logger logger =LoggerFactory.getLogger(ValidatePersonServicePage.class);
 	private WebDriverBaseActions action = new WebDriverBaseActions(null);
 	private static final int TIME_OUT_FOR_SLEEP=PropertiesReader.getIntProperty("timeOutForSleep");
-	private static final String SMOKE_FILE_PATH_EXPECTED_RESULTS = PropertiesReader.smokeTestsExpectedResults();
-	private static final String FILE_PATH_EXPECTED_RESULTS = PropertiesReader.validatePersonExpectedResultsFiles();
 	private static final String SERVICE_NAME="VALIDATE_PERSON"; //имя сервиса для отчетности и скринов
 	//описание основных элементов для сервиса Validate Person
 	private static final String VALIDATE_PERSON_EXPAND_OPERATIONS="//li[@id='resource_ValidatePerson']//a[contains(@onclick,'expandOperationsForResource')]";
@@ -49,12 +45,10 @@ public class ValidatePersonServicePage extends BaseScreen {
 		action.clickByXpath(VALIDATE_PERSON_EXPAND_OPERATIONS, "EXPAND_OPERATIONS_BUTTON",nameOfTest, SERVICE_NAME);
 		action.setField(VALIDATE_PERSON_BODY, testData, "REQUEST_BODY",nameOfTest, SERVICE_NAME);
 		action.clickByXpath(VALIDATE_PERSON_SUBMIT_REQUEST,"BUTTON_TRY_IT_OUT",nameOfTest, SERVICE_NAME);	
-		TimeUnit.SECONDS.sleep(TIME_OUT_FOR_SLEEP); 
-		
+		TimeUnit.SECONDS.sleep(TIME_OUT_FOR_SLEEP); 	
 		//создание элемента и скролинг до этого элемента(тело ответа) по джава скрипту для снятие скриншота
 		WebElement responseBody = driver.findElement(By.xpath(VALIDATE_PERSON_RESPONSE_BODY));
-		((JavascriptExecutor) driver).executeScript("window.scrollTo(0,"+ responseBody.getLocation().y + ")"); //сдвигает страницу до нужного элемента. в данном случае то тела ответа
-		
+		((JavascriptExecutor) driver).executeScript("window.scrollTo(0,"+ responseBody.getLocation().y + ")"); //сдвигает страницу до нужного элемента. в данном случае то тела ответ
 		logger.info("[ACTION]: CAPTURE SCREENSHOT OF RESPONSE BODY FOR TEST:"+nameOfTest);
 		TimeUnit.SECONDS.sleep(TIME_OUT_FOR_SLEEP); 
 		Photogropher.doScreenshot(nameOfTest+"_RESPONSE_BODY", SERVICE_NAME);
@@ -73,23 +67,4 @@ public class ValidatePersonServicePage extends BaseScreen {
     	return responseCode;
     }
 	
-	
-	
-    @SuppressWarnings("resource")
-	public String returnExpectedResult(String nameOfFile) throws IOException{
-    	FileInputStream inFile = new FileInputStream(FILE_PATH_EXPECTED_RESULTS+"/"+nameOfFile);
-    	byte[] str = new byte[inFile.available()];
-    	inFile.read(str);
-    	String expectedResult = new String(str);
-    	return expectedResult;
-    }
-    
-    @SuppressWarnings("resource")
-	public String smokeReturnExpectedResult(String nameOfFile) throws IOException{
-		FileInputStream inFile = new FileInputStream(SMOKE_FILE_PATH_EXPECTED_RESULTS+"/"+nameOfFile);
-    	byte[] str = new byte[inFile.available()];
-    	inFile.read(str);
-    	String expectedResult = new String(str);
-    	return expectedResult;
-    }
 }

@@ -57,6 +57,14 @@ public class PropertiesReader {
 		return getProperty("validatePerson.expectedPath");
 	}
 	
+	public static String getPersonNumberExpectedResultsFiles(){
+		return getProperty("getNumber.expectedPath");
+	}
+	
+	public static String getSalaryExpectedResultsFiles(){
+		return getProperty("getSalary.expectedPath");
+	}
+	
 	// берет конфиги по ключу
 	public static String getProperty(String key) {
 		String propertyValue = PROPERTIES.getProperty(key);

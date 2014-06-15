@@ -11,15 +11,10 @@ import org.testng.Assert;
 
 import com.autotesting.framework.screens.BaseScreen;
 import com.autotesting.framework.screens.GetPersonServicePage;
-import com.autotesting.framework.testdata.GetPersonTestData;
-
-
 
 public class GetPersonServiceTests {
 	//надо создавать объекты для каждой страницы которая будет использоваться в тесте
 	GetPersonServicePage getPerson = new GetPersonServicePage();
-	private static final String PERSON_NUMBER_FIRST_TEST = GetPersonTestData.getProperty("getPerson.firstTest");
-	private static final String PERSON_NUMBER_SECOND_TEST = GetPersonTestData.getProperty("getPerson.secondTest");
 	private static final String VALID_RESPONSE_CODE = "200";
 
 	@BeforeMethod
@@ -31,7 +26,7 @@ public class GetPersonServiceTests {
 	public void finishTests(){
 		BaseScreen.closeBrowser();
 	}
-	
+/*	
 	//Test number 1. Не валидный СНИЛС (убраны 2 числа из самого СНИЛС). проверить что возвращается ошибка о том что СНИЛС не найден
 	@Test
 	public void getPersonTestInvalidNumber() throws InterruptedException, IOException {

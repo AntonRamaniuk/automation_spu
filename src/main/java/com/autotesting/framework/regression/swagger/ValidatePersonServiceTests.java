@@ -9,7 +9,6 @@ import org.testng.Assert;
 
 import com.autotesting.framework.screens.GetPersonServicePage;
 import com.autotesting.framework.screens.ValidatePersonServicePage;
-import com.autotesting.framework.testdata.GetPersonTestData;
 
 public class ValidatePersonServiceTests {
 	ValidatePersonServicePage validatePerson = new ValidatePersonServicePage();

@@ -1,8 +1,8 @@
 {
   "name": {
-    "lastName": "«”¡–Œ¬¿",
-    "firstName": "»–»Õ¿",
-    "middleName": "Õ» ŒÀ¿≈¬Õ¿"
+    "lastName": "–ó–£–ë–†–û–í–ê",
+    "firstName": "–ò–†–ò–ù–ê",
+    "middleName": "–ù–ò–ö–û–õ–ê–ï–í–ù–ê"
   },
   "number": "001-001-041 20",
   "periods": [

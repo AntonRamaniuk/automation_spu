@@ -9,8 +9,7 @@ package com.autotesting.framework.screens;
  * 
  */
 
-import java.io.FileInputStream;
-import java.io.IOException;
+
 import java.io.UnsupportedEncodingException;
 import java.util.concurrent.TimeUnit;
 
@@ -29,8 +28,7 @@ public class GetPersonNumberServicePage extends BaseScreen {
 	private final Logger logger = LoggerFactory.getLogger(GetPersonNumberServicePage.class);
 	private WebDriverBaseActions action = new WebDriverBaseActions(null);
 	private static final int TIME_OUT_FOR_SLEEP=PropertiesReader.getIntProperty("timeOutForSleep");
-	private static final String SMOKE_FILE_PATH_EXPECTED_RESULTS = PropertiesReader.smokeTestsExpectedResults();
-	private static final String FILE_PATH_EXPECTED_RESULTS = PropertiesReader.validatePersonExpectedResultsFiles();
+	private static final String FILE_PATH_EXPECTED_RESULTS = PropertiesReader.getPersonNumberExpectedResultsFiles();
 	private static final String SERVICE_NAME="GET_PERSON_NUMBER"; //имя сервиса для отчетности и скринов
 	//описание основных элементов для сервиса Get Person Number
 	private static final String GET_PERSON_NUMBER_EXPAND_OPERATIONS="//li[@id='resource_GetPersonNumber']//a[contains(@onclick,'expandOperationsForResource')]";
@@ -69,26 +67,6 @@ public class GetPersonNumberServicePage extends BaseScreen {
     	String responseCode = driver.findElement(By.xpath(GET_PERSON_NUMBER_RESPONSE_CODE)).getText();
     	logger.info("[ACTION]: COLLECTED RESPONSE CODE");
     	return responseCode;
-    }
-	
-	
-	
-    @SuppressWarnings("resource")
-	public String returnExpectedResult(String nameOfFile) throws IOException{
-    	FileInputStream inFile = new FileInputStream(FILE_PATH_EXPECTED_RESULTS+"/"+nameOfFile);
-    	byte[] str = new byte[inFile.available()];
-    	inFile.read(str);
-    	String expectedResult = new String(str);
-    	return expectedResult;
-    }
-    
-    @SuppressWarnings("resource")
-	public String smokeReturnExpectedResult(String nameOfFile) throws IOException{
-		FileInputStream inFile = new FileInputStream(SMOKE_FILE_PATH_EXPECTED_RESULTS+"/"+nameOfFile);
-    	byte[] str = new byte[inFile.available()];
-    	inFile.read(str);
-    	String expectedResult = new String(str);
-    	return expectedResult;
     }
     
     

@@ -1,92 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="1" total="4" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21" started-at="2014-06-12T16:11:17Z" finished-at="2014-06-12T16:11:17Z">
+  <suite name="Default suite" duration-ms="200" started-at="2014-06-13T18:35:45Z" finished-at="2014-06-13T18:35:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21" started-at="2014-06-12T16:11:17Z" finished-at="2014-06-12T16:11:17Z">
-      <class name="com.autotesting.framework.smoke.SmokeTests">
-        <test-method status="FAIL" signature="getPersonTestValidNumber()[pri:0, instance:com.autotesting.framework.smoke.SmokeTests@4a0e69ae]" name="getPersonTestValidNumber" duration-ms="7" started-at="2014-06-12T18:11:17Z" finished-at="2014-06-12T18:11:17Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.autotesting.framework.screens.GetPersonServicePage.validatePersonInfoByNumber(GetPersonServicePage.java:46)
-	at com.autotesting.framework.smoke.SmokeTests.getPersonTestValidNumber(SmokeTests.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test name="Default test" duration-ms="200" started-at="2014-06-13T18:35:45Z" finished-at="2014-06-13T18:35:45Z">
+      <class name="com.autotesting.framework.primaryFiles.LoadPrimaryFilesRest">
+        <test-method status="PASS" signature="LoadPrimaryFilesViaRest()[pri:0, instance:com.autotesting.framework.primaryFiles.LoadPrimaryFilesRest@3fb10fd4]" name="LoadPrimaryFilesViaRest" duration-ms="190" started-at="2014-06-13T20:35:45Z" finished-at="2014-06-13T20:35:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getPersonTestValidNumber -->
-        <test-method status="SKIP" signature="validatePersonValidData()[pri:0, instance:com.autotesting.framework.smoke.SmokeTests@4a0e69ae]" name="validatePersonValidData" duration-ms="1" started-at="2014-06-12T18:11:17Z" depends-on-methods="com.autotesting.framework.smoke.SmokeTests.getPersonTestValidNumber" finished-at="2014-06-12T18:11:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePersonValidData -->
-        <test-method status="SKIP" signature="getPersonNumberValidData()[pri:0, instance:com.autotesting.framework.smoke.SmokeTests@4a0e69ae]" name="getPersonNumberValidData" duration-ms="1" started-at="2014-06-12T18:11:17Z" depends-on-methods="com.autotesting.framework.smoke.SmokeTests.getPersonTestValidNumber, com.autotesting.framework.smoke.SmokeTests.validatePersonValidData" finished-at="2014-06-12T18:11:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getPersonNumberValidData -->
-        <test-method status="SKIP" signature="getSalaryValidData()[pri:0, instance:com.autotesting.framework.smoke.SmokeTests@4a0e69ae]" name="getSalaryValidData" duration-ms="1" started-at="2014-06-12T18:11:17Z" depends-on-methods="com.autotesting.framework.smoke.SmokeTests.getPersonTestValidNumber, com.autotesting.framework.smoke.SmokeTests.validatePersonValidData, com.autotesting.framework.smoke.SmokeTests.getPersonNumberValidData" finished-at="2014-06-12T18:11:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSalaryValidData -->
-        <test-method status="FAIL" signature="finishTests()[pri:0, instance:com.autotesting.framework.smoke.SmokeTests@4a0e69ae]" name="finishTests" is-config="true" duration-ms="0" started-at="2014-06-12T18:11:17Z" finished-at="2014-06-12T18:11:17Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.autotesting.framework.utils.WebDriverRunner.stopWebDriver(WebDriverRunner.java:58)
-	at com.autotesting.framework.screens.BaseScreen.closeBrowser(BaseScreen.java:31)
-	at com.autotesting.framework.smoke.SmokeTests.finishTests(SmokeTests.java:42)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:308)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finishTests -->
-      </class> <!-- com.autotesting.framework.smoke.SmokeTests -->
+        </test-method> <!-- LoadPrimaryFilesViaRest -->
+      </class> <!-- com.autotesting.framework.primaryFiles.LoadPrimaryFilesRest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

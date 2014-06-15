@@ -19,10 +19,8 @@ import com.autotesting.framework.screens.GetPersonNumberServicePage;
 import com.autotesting.framework.screens.GetPersonServicePage;
 import com.autotesting.framework.screens.GetSalaryServicePage;
 import com.autotesting.framework.screens.ValidatePersonServicePage;
-import com.autotesting.framework.testdata.GetPersonNumberTestData;
-import com.autotesting.framework.testdata.GetPersonTestData;
-import com.autotesting.framework.testdata.GetSalaryTestData;
-import com.autotesting.framework.testdata.ValidatePersonTestData;
+import com.autotesting.framework.utils.FileUtils;
+import com.autotesting.framework.utils.PropertiesReader;
 
 public class SmokeTests {
 	
@@ -30,11 +28,8 @@ public class SmokeTests {
 	ValidatePersonServicePage validatePerson = new ValidatePersonServicePage();
 	GetPersonNumberServicePage getPersonNumber = new GetPersonNumberServicePage();
 	GetSalaryServicePage getSalary = new GetSalaryServicePage();
-	private static final String PERSON_NUMBER_SMOKE_TEST = GetPersonTestData.getProperty("getPerson.smokeTest");
-	private static final String SMOKE_TEST_FILE_VALIDATE_PERSON = "validate_person_smoke_test.txt";
-	private static final String SMOKE_TEST_FILE_GET_PERSON_NUMBER = "get_person_number_smoke_test.txt";
-	private static final String SMOKE_TEST_FILE_GET_SALARY= "get_salary_smoke_test.txt";
 	private static final String VALID_RESPONSE_CODE = "200";
+	private static final String SMOKE_TESTS_EXPECTED_RESULTS_FILES = PropertiesReader.smokeTestsExpectedResults();
 	
 	
 	@AfterSuite
@@ -45,44 +40,52 @@ public class SmokeTests {
 	//Smoke Test for service Get Person. Фамилия - Зуброва. Все данные валидны.
 	@Test 
 	public void getPersonTestValidNumber() throws InterruptedException, IOException {
-		getPerson.openSession();
-		getPerson.validatePersonInfoByNumber(PERSON_NUMBER_SMOKE_TEST,"Smoke_getPersonTestValidNumber");
-		Assert.assertEquals(getPerson.getResponseCode(), VALID_RESPONSE_CODE,"INCORRECT RESPONSE CODE IS APPEARED");
+		
+		String SMOKE_TEST_FILE_VALIDATE_PERSON = "get_person_smoke_test.txt";
+		String GET_PERSON_DATA_SMOKE_TEST = FileUtils.returnFileContent(PropertiesReader.getProperty("getPerson.sendPath"),
+				SMOKE_TEST_FILE_VALIDATE_PERSON);
+		getPerson.validatePersonInfoByNumber(GET_PERSON_DATA_SMOKE_TEST, "Smoke_getPersonTestValidNumber");
+		Assert.assertEquals(getPerson.getResponseCode(), VALID_RESPONSE_CODE, "INCORRECT RESPONSE CODE IS APPEARED");
 		Assert.assertEquals(getPerson.getResponseBodyText().replaceAll("\n", "").trim().toUpperCase(), 
-				getPerson.smokeReturnExpectedResult("getPerson_smokeTest.txt").replaceAll("\r\n", "").trim().toUpperCase(),"INCORRECT RESPONSE MESSAGE");
-
+				FileUtils.returnFileContent(SMOKE_TESTS_EXPECTED_RESULTS_FILES, "getPerson_smokeTest.txt").replaceAll("\r\n", "").trim().toUpperCase(), "INCORRECT RESPONSE MESSAGE");
 	}
 	
 	//Smoke Test for service ValidatePerson. Фамилия - Зуброва. Все данные валидны.
 	@Test (dependsOnMethods = {"getPersonTestValidNumber"})
 	public void validatePersonValidData() throws IOException, InterruptedException {
 		validatePerson.openSession();
-		String VALIDATE_PERSON_DATA_SMOKE_TEST = ValidatePersonTestData.returnTestData(SMOKE_TEST_FILE_VALIDATE_PERSON);
+		String SMOKE_TEST_FILE_VALIDATE_PERSON = "validate_person_smoke_test.txt";
+		String VALIDATE_PERSON_DATA_SMOKE_TEST = FileUtils.returnFileContent(PropertiesReader.getProperty("validatePerson.sendPath"),
+				SMOKE_TEST_FILE_VALIDATE_PERSON);
 		validatePerson.validatePerson(VALIDATE_PERSON_DATA_SMOKE_TEST, "Smoke_validatePersonValidData");
 		Assert.assertEquals(validatePerson.getResponseCode(), VALID_RESPONSE_CODE, "INCORRECT RESPONSE CODE IS APPEARED");
 		Assert.assertEquals(validatePerson.getResponseBodyText().replaceAll("\n", "").trim().toUpperCase(), 
-				validatePerson.smokeReturnExpectedResult("validatePerson_smokeTest.txt").replaceAll("\r\n", "").trim().toUpperCase(), "INCORRECT RESPONSE MESSAGE");
+				FileUtils.returnFileContent(SMOKE_TESTS_EXPECTED_RESULTS_FILES, "validatePerson_smokeTest.txt").replaceAll("\r\n", "").trim().toUpperCase(), "INCORRECT RESPONSE MESSAGE");
 	}
 
 	//Smoke Test for service GetPersonNumber. Фамилия - Зуброва. Все данные валидны.
 	@Test (dependsOnMethods = {"getPersonTestValidNumber", "validatePersonValidData"})
 	public void getPersonNumberValidData() throws IOException, InterruptedException {
 		getPersonNumber.openSession();
-		String GET_PERSON_NUMBER_DATA_SMOKE_TEST = GetPersonNumberTestData.returnTestData(SMOKE_TEST_FILE_GET_PERSON_NUMBER);
+		String SMOKE_TEST_FILE_GET_PERSON_NUMBER = "get_person_number_smoke_test.txt";
+		String GET_PERSON_NUMBER_DATA_SMOKE_TEST = FileUtils.returnFileContent(PropertiesReader.getProperty("getSalary.sendPath"), 
+				SMOKE_TEST_FILE_GET_PERSON_NUMBER);
 		getPersonNumber.getPersonNumberByData(GET_PERSON_NUMBER_DATA_SMOKE_TEST, "Smoke_getPersonNumberValidData");
 		Assert.assertEquals(getPersonNumber.getResponseCode(), VALID_RESPONSE_CODE, "INCORRECT RESPONSE CODE IS APPEARED");
 		Assert.assertEquals(getPersonNumber.getResponseBodyText().replaceAll("\n", "").trim().toUpperCase(), 
-				getPersonNumber.smokeReturnExpectedResult("getPersonNumber_smokeTest.txt").replaceAll("\r\n", "").trim().toUpperCase(), "INCORRECT RESPONSE MESSAGE");
+				FileUtils.returnFileContent(SMOKE_TESTS_EXPECTED_RESULTS_FILES,"getPersonNumber_smokeTest.txt").replaceAll("\r\n", "").trim().toUpperCase(), "INCORRECT RESPONSE MESSAGE");
 	}
 
 	//Smoke Test for service GetSalary. Фамилия - Зуброва. Все данные валидны.
 	@Test (dependsOnMethods = {"getPersonTestValidNumber", "validatePersonValidData", "getPersonNumberValidData"})
 	public void getSalaryValidData() throws IOException, InterruptedException {
 		getSalary.openSession();
-		String GET_SALARY_DATA_SMOKE_TEST = GetSalaryTestData.returnTestData(SMOKE_TEST_FILE_GET_SALARY);
+		String SMOKE_TEST_FILE_GET_SALARY= "get_salary_smoke_test.txt";
+		String GET_SALARY_DATA_SMOKE_TEST = FileUtils.returnFileContent(PropertiesReader.getProperty("getSalary.sendPath"),
+				SMOKE_TEST_FILE_GET_SALARY);
 		getSalary.getPersonSalary(GET_SALARY_DATA_SMOKE_TEST, "Smoke_getSalaryValidData");
 		Assert.assertEquals(getSalary.getResponseCode(), VALID_RESPONSE_CODE, "INCORRECT RESPONSE CODE IS APPEARED");
 		Assert.assertEquals(getSalary.getResponseBodyText().replaceAll("\n", "").trim().toUpperCase(), 
-				getSalary.smokeReturnExpectedResult("getSalary_smokeTest.txt").replaceAll("\r\n", "").trim().toUpperCase(), "INCORRECT RESPONSE MESSAGE");
+				FileUtils.returnFileContent(SMOKE_TESTS_EXPECTED_RESULTS_FILES,"getSalary_smokeTest.txt").replaceAll("\r\n", "").trim().toUpperCase(), "INCORRECT RESPONSE MESSAGE");
 	}
 }
